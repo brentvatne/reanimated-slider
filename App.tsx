@@ -24,8 +24,11 @@ export default function App() {
         transition={1000}
       />
       <AnimatedBlurView
+        experimentalBlurMethod="dimezisBlurView"
         intensity={intensity}
         style={[StyleSheet.absoluteFill]}
+        // Other style properties will update correctly
+        // style={[StyleSheet.absoluteFill, { opacity, backgroundColor: 'red' }]}
       />
       <Animated.View
         style={{
